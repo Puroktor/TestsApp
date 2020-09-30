@@ -1,0 +1,33 @@
+﻿<Window x:Class="Test.Window5"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Test"
+        mc:Ignorable="d"
+        Title="Window5" WindowStyle="None" WindowState="Maximized">
+    <Grid Background="{StaticResource Main}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock FontFamily="Segoe WP Black,Arial Black" VerticalAlignment="Center" HorizontalAlignment="Right" TextAlignment="Center" FontSize="20" Grid.Row="1" Text="Название: "/>
+        <TextBox Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="1" FontFamily="Segoe WP Black,Arial Black" FontSize="20" Margin="10" TextAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="Names" TextChanged="Names_TextChanged" TextWrapping="Wrap"/>
+        <TextBlock FontFamily="Segoe WP Black,Arial Black" VerticalAlignment="Center" HorizontalAlignment="Right" TextAlignment="Center" FontSize="20" Grid.Row="2" Text="Автор: "/>
+        <TextBox Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="2" FontFamily="Segoe WP Black,Arial Black" FontSize="20" Margin="10" TextAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="Author" TextWrapping="Wrap"/>
+        <TextBlock FontFamily="Segoe WP Black,Arial Black" VerticalAlignment="Center" HorizontalAlignment="Right" TextAlignment="Center" FontSize="20" Grid.Row="3" Text="Кол-во вопросов: "/>
+        <TextBox Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="3" FontFamily="Segoe WP Black,Arial Black" FontSize="20" Margin="10" TextAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextChanged="TextBox_TextChanged" x:Name="Qestions" TextWrapping="Wrap"/>
+        <Button Style="{StaticResource normal}" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="5" Content="ДАЛЕЕ >>" FontFamily="Verdana" FontWeight="Bold" Click="Button_Click"/>
+        <TextBlock FontFamily="Segoe WP Black,Arial Black" VerticalAlignment="Center" HorizontalAlignment="Center" TextAlignment="Center" FontSize="20" x:Name="TexT" Grid.Row="4" Grid.ColumnSpan="4" Foreground="Red"/>
+    </Grid>
+</Window>
